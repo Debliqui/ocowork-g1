@@ -1,0 +1,412 @@
+/******Main******/
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+
+section {
+    background-color: white;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+/******Banner******/
+
+.banner {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.banner>img {
+    width: 100%;
+    height: 400px;
+    border-radius: 20px;
+    object-fit: cover;
+}
+
+.values {
+    margin-top: -100px;
+    background-color: white;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    padding: 20px;
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0px 4px 14px 0px rgba(0, 0, 0, 0.14);
+    z-index: -1;
+}
+
+.values>article {
+    flex-grow: 1;
+    flex-basis: 0;
+    background-color: white;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    padding: 10px;
+}
+
+.value:hover {
+    background-color: var(--secondary-color);
+}
+
+.iconValue {
+    width: 40px;
+    height: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.iconValue>i {
+    color: var(--secondary-color);
+    font-size: 32px;
+}
+
+.value:hover>.iconValue>i {
+    color: white;
+}
+
+.descriptionValue {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: var(--secondary-color);
+}
+
+.value:hover>.descriptionValue>* {
+    color: white;
+}
+
+.descriptionValue>h3 {
+    color: var(--secondary-color);
+    font-size: 18px;
+}
+
+.descriptionValue>p {
+    color: var(--secondary-color);
+    font-size: 14px;
+}
+
+/******services******/
+.services {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+#services>h4 {
+    font-size: 16px;
+    color: var(--secondary-color);
+}
+
+.services {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+.services>article {
+    width: 17%;
+    padding: 20px;
+    background-color: white;
+    border: solid 2px var(--main-color);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.iconService {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    background-color: rgba(217, 206, 253, 0.8);
+}
+
+.iconService>i {
+    color: var(--main-color);
+}
+
+.descriptionService {
+    color: var(--secondary-color);
+    overflow: hidden;
+    white-space: nowrap;
+    font-weight: normal;
+    font-size: 15px;
+}
+
+.services>article:hover {
+    background-color: var(--main-color);
+    color: white;
+}
+
+.services>article:hover>.iconService {
+    background-color: white;
+}
+
+.services>article:hover>.descriptionService {
+    color: white;
+}
+
+/******coworkingSpaces******/
+#coworkingSpaces {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    width: 100%;
+}
+
+.title {
+    color: var(--main-color);
+    font-size: 32px;
+}
+
+.cards {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.card {
+    width: 22%;
+    height: 350px;
+    border: solid 2px white;
+    border-radius: 20px;
+    box-shadow: 0px 4px 14px 0px rgba(217, 206, 253, 0.8);
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card>article {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card>article>img {
+    width: 100%;
+    height: 55%;
+    border-radius: 20px 20px 0 0;
+    object-fit: cover;
+}
+
+.description {
+    width: 100%;
+    height: 45%;
+    display: flex;
+    flex-direction: column;
+}
+
+.room {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 10px 10px 10px;
+}
+
+.roomName {
+    color: var(--main-color);
+    font-size: 18px;
+}
+
+.roomCapacity {
+    color: var(--secondary-color);
+    font-size: 14px;
+}
+
+.equipements {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin: 0px;
+    padding: 0px 10px 10px 10px;
+    padding-inline-start: 30px;
+}
+
+.equipements>li {
+    display : block;
+    font-size: 14px;
+}
+
+/******meetingSpaces******/
+#meetingSpaces {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 30px 0 30px 0;
+}
+
+.meetingCards {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.meetingCard {
+    width: 28%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.meetingCard>img {
+    width: 100%;
+    height: 250px;
+    border-radius: 20px;
+    object-fit: cover;
+}
+
+.meetingCard>a {
+    padding: 20px;
+    background-color: rgba(217, 206, 253);
+    border-radius: 20px;
+    text-align: center;
+    align-content: center;
+    margin-top: 0px;
+}
+.meetingCard > a > h3 {
+    color: var(--secondary-color);
+    font-size: 14px;
+    font-weight: 600;
+}
+.meetingCard>a:hover {
+    transform: scale(1.03)
+}
+
+@media screen and (max-width: 1024px) {
+
+    /******Banner******/
+    .banner>img {
+        height: 300px;
+    }
+
+    .values {
+        margin-top: -100px;
+        flex-direction: column;
+        max-width: 70%;
+    }
+
+    /******services******/
+    #services>h4 {
+        font-size: 15px;
+    }
+
+    .services {
+        flex-direction: row;
+        flex-wrap: wrap;
+        row-gap: 30px;
+    }
+
+    /******coworkingSpace******/
+    .cards {
+        flex-wrap: wrap;
+        row-gap: 30px;
+    }
+
+    .card {
+        width: 45%;
+        height: 350px;
+        border: solid 2px white;
+        border-radius: 20px;
+        box-shadow: 0px 4px 14px 0px rgba(217, 206, 253, 0.8);
+    }
+
+    /******meetingSpaces******/
+}
+
+@media screen and (max-width: 768px) {
+
+    /******Main******/
+    main {
+        margin: 0 20px 0 20px;
+    }
+
+    /******Banner******/
+    .banner>img {
+        height: 200px;
+    }
+
+    .values {
+        margin-top: -50px;
+    }
+
+    /******services******/
+    #services>h4 {
+        font-size: 12px;
+    }
+
+    .services {
+        width: 100%;
+        flex-direction: column;
+        align-items: unset;
+        gap: 30px;
+    }
+
+    .services>article {
+        width: auto;
+        flex: 1;
+        margin: 0 20px 0 20px;
+    }
+
+    /******coworkingSpace******/
+    .cards {
+        flex-direction: column;
+        align-items: unset;
+        gap: 30px;
+    }
+
+    .card {
+        width: auto;
+    }
+
+    .card {
+        width: 60%;
+    }
+    /******meetingSpaces******/
+    #meetingSpaces {
+        padding: 0px;
+    }
+
+    .meetingCards {
+        flex-direction: column;
+        align-items: unset;
+        gap: 30px;
+    }
+
+    .meetingCard {
+        width: 100%;
+    }
+}

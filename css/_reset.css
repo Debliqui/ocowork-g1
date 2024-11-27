@@ -1,0 +1,56 @@
+/****** General ***********/
+* {
+    font-family: "Poppins", sans-serif;
+    color: #000;
+}
+
+:root {
+    --main-color: #8360F6;
+    --secondary-color: #3C32A4;
+    --tertiary-color: #41D3D8;
+    --main-bg-color: #F2F2F2;
+    --light-bg-color: rgba(217, 206, 253, 0.8);
+}
+
+.fa-solid {
+    color: var(--main-color);
+}
+
+h1, h2, h3, h4, h5, p {
+    margin: 0px;
+}
+
+a {
+    text-decoration: none;
+    color: var(--main-color);
+}
+
+/******** BODY ********/
+body {
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mainContainer {
+    width: 100%;
+    max-width: 1440px;
+    min-width: 375px;
+    padding: 0 50px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        margin: 0px;
+    }
+
+    .mainContainer {
+        padding: 0px;
+    }
+}
